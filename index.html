@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Zavrsni - Prakticni dio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body>
+    <div id="caesar-cipher">
+        <h1>Cezarovo šifriranje</h1>
+        <textarea id="caesar-sourcetext" placeholder="Unesite izvornu poruku"></textarea>
+        <br>
+        <input id="caesar-offset" type="number" placeholder="Unesite pomak">
+        <br>
+        <button onclick="cezarovoSifriranje()">Šifriraj</button>
+
+        <div id="caesar-cipher-result"></div>
+    </div>
+
+    <div id="aes">
+        <h1>AES-128</h1>
+
+        <textarea id="aes-sourcetext" placeholder="Unesite izvornu poruku (max. 16 znakova)"></textarea>
+        <br>
+        <p>Ključ(128-bit) : </p>
+        <input id="aes-key" type="text" placeholder="Unesite ključ (max. 16 znakova)">
+        <br>
+        <button onclick="aes()">Šifriraj</button>
+
+        <div id="aes-result"></div>
+    </div>
+
+    <div id="rsa">
+        <h1>RSA</h1>
+        <h3>Neki ključevi za korištenje:</h3>
+        <table>
+            <tr>
+                <th>E</th>
+                <th>p</th>
+                <th>q</th>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>11</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>829</td>
+                <td>31</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>443</td>
+                <td>17</td>
+                <td>43</td>
+            </tr>
+            <tr>
+                <td>223</td>
+                <td>29</td>
+                <td>53</td>
+            </tr>
+        </table>
+        <textarea id="rsa-sourcetext" placeholder="Unesite izvornu poruku"></textarea>
+        <br>
+        <p>Javni ključ (E, p*q) : </p>
+        <input id="rsa-firstnum" type="number" placeholder="E">
+        <input id="rsa-prime1" type="number" placeholder="p">
+        <input id="rsa-prime2" type="number" placeholder="q">
+        <br>
+        <button onclick="rsa()">Šifriraj</button>
+
+        <div id="rsa-result"></div>
+    </div>
+    
+    <div id="sha-256">
+        <h1>SHA-256</h1>
+        <textarea id="sha-sourcetext" placeholder="Unesite izvornu poruku"></textarea>
+        <br>
+        <button onclick="sha256()">Heširaj</button>
+
+        <div id="sha-result"></div>
+    </div>
+
+    <div id="sha-256-salt">
+        <h1>SHA-256 w/ Salt</h1>
+        <textarea id="sha-salt-sourcetext" placeholder="Unesite izvornu poruku"></textarea>
+        <br>
+        <input id="sha-salt-length" type="number" placeholder="Unesite veličinu salta">
+        <br>
+        <button onclick="sha256_salt()">Heširaj</button>
+
+        <div id="sha-salt-result"></div>
+    </div>
+</body>
+</html>
