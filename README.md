@@ -1,4 +1,4 @@
-<h1 align="center">Koncepti kriptografije i komparacija kriptografskih algoritama</h1>
+<h1 align="center">Kriptografski algoritmi</h1>
 <h4 align="center">Završni rad 1. ciklusa studija</h4>
 <h4 align="center">Elektrotehnički fakultet Sarajevo</h4>
 <h4 align="center">Autor: Elvedin Smajić</h4>
